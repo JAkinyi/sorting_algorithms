@@ -67,7 +67,7 @@ void quickSort_Lomuto(int *array, int low, int hi, size_t size)
   
   if (low < hi)
     {
-        int piv = partition(array, low, hi, size);
+        piv = partition(array, low, hi, size);
         quickSort_Lomuto(array, low, piv - 1, size);
         quickSort_Lomuto(array, piv + 1, hi, size);
     }
